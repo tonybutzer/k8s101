@@ -2,6 +2,8 @@
 
 echo "Hello Tony" > /tmp/hellotony.txt
 
+sudo apt-get install -y make
+
 EC=k8s
 sudo hostname $EC
 echo "127.0.0.1 $EC " >> /etc/hosts
