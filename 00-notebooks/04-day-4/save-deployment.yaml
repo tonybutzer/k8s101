@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.17.0 (a74acad)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: product-service
+  name: product-service
+spec:
+  selector:
+    matchLabels:
+      app: product-service
+  replicas: 4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: product-service
+    spec:
+      containers:
+      - image: tbutzer/product_server
+        name: product-service
+        ports:
+        - containerPort: 80
+        resources: {}
+      restartPolicy: Always
