@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+        reverse-proxy:
+                image: traefik:alpine
+                command: --api
+                ports:
+                        - "80:80"
+                        - "9999:8080"  # i am using 8080 for jupyter here
+                volumes:
+                        - ${PWD}/traefik.toml:/etc/traefik/traefik.toml

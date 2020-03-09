@@ -1,0 +1,11 @@
+[api]
+  entryPoint = "traefik"
+  dashboard = true
+  address = ":8080"
+
+# Force to fronten kubernetes lab nodeport
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+    [entryPoints.http.redirect]
+      replacement = "http://10.12.68.23:30537"
