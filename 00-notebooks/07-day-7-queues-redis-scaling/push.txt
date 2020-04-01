@@ -1,0 +1,10 @@
+rpush job2 "apple"
+rpush job2 "banana"
+rpush job2 "cherry"
+rpush job2 "date"
+rpush job2 "fig"
+rpush job2 "grape"
+rpush job2 "lemon"
+rpush job2 "melon"
+rpush job2 "orange"
+
