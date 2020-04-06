@@ -11,6 +11,20 @@ i Hope:
 
 ## WIP
 
+### Rancher
+
+1. Read the docs rancher
+
+
+1. installing and learning the cli plus rke
+	- watch this
+		- How to install a Kubernetes Cluster with Rancher - Henrik Hoegh
+			- 
+	- study this github repo
+		- login to mr umyssh mr
+		- git clone http://github.com/hoeghh/rancher-launcher-kvm
+		
+
 
 ## oleWIP
 
