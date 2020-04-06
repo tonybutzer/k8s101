@@ -1,13 +1,22 @@
-# ODC Hub CHS
+# Kubernetes Hosts Managed by Terraform
 
-this terraform code creates an ec2-instance
+this terraform code creates a master and two ships all running docker and IAC via terraform
+i Hope:
 
-1.  butzer-odc-hub1
+
+1.  master
+2.  ship1
+3.  ship2
 
 
-this is to be used by USGS, NASA and GA to train scientists and engineer son Jupyter Hubs, lLabs and Notebooks and transition these teams towrad more complex setups for scalable science.
+## WIP
 
--tony
+1. test start and stop of ships
+2. do it again this time with auto start of docker
+2. add master with docker 
+4. take a walk and plan next steps
 
+
+## Next Steps
 
 
