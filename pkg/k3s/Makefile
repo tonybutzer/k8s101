@@ -29,5 +29,11 @@ metrics:
 	git clone https://github.com/kubernetes-incubator/metrics-server.git
 	kubectl apply -f metrics-server/deploy/kubernetes/
 
+
+deploy-nginx:
+	kubectl apply -f https://raw.githubusercontent.com/myannou/k3d-demo/master/nginx.yaml
+
+test-nginx:
+	curl http://localhost:8081
 git:
 	(cd /opt/k8s101; make)

@@ -93,11 +93,22 @@ and then for instance you can scale up to 3 pods in the « prod » cluster:
 ```
 kubectl scale --replicas=3 deployment/nginx
 
+
+
 ### Just Wait!
-**I am running 3 kubernetes clusters on my local macbook pro**  with respectively 1 master, 1 master with 1 worker node and 1 master with 2 worker nodes !
+
+
+**I am running 3 kubernetes clusters on my local macbook pro**  
+with respectively 
+- 1 master, 
+- 1 master with 1 worker node 
+- and 1 master with 2 worker nodes !
+
 I also did the test with an old MacBook with less memory and I couldn’t run the third cluster but it was easy with the k3d command to stop the other clusters:
+
 ```
 k3d stop --name=dev
+
 k3d stop --name=stag
 ```
 and you can restart them later (k3d start --name=dev) retrieving the same state as before
