@@ -18,7 +18,7 @@ resource "aws_instance" "ship" {
   key_name                    = "${var.key_name}"
   subnet_id                   = "${var.subnet_id}"
   tags = {
-    Name = "butzer-k8s-sb"
+    Name = "${var.ship_name[count.index]}"
     Owner = "butzer@contractor.usgs.gov"
     Project = "LPIP"
   }

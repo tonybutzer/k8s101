@@ -16,6 +16,10 @@ variable "subnet_id" {
 }
 
 
+variable "ship_name" {
+  description = "The test number"
+  default = ["butzer-ship-0", "butzer-ship-1"]
+}
 variable "test_name" {
   description = "The test number"
   default = "a1"

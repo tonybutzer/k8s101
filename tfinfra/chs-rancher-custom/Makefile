@@ -11,6 +11,9 @@ destroy:
 bash:
 	docker run -i -t -v `pwd`/:/tfinfra tbutzer/terraform bash
 
+ipshow:
+	terraform show |egrep  'Name|private_ip'
+
 
 git:
 	(cd /opt/k8s101; make)
