@@ -63,7 +63,7 @@ To install it :
 
 ```
 git clone https://github.com/kubernetes-incubator/metrics-server.git
-kubectl apply -f metrics-server/deploy/1.8+/
+kubectl apply -f metrics-server/deploy/kubernetes/
 ```
 Wait 1 or 2 minutes and then you can now use the following commands:
 ```
@@ -92,7 +92,7 @@ and then for instance you can scale up to 3 pods in the « prod » cluster:
 
 ```
 kubectl scale --replicas=3 deployment/nginx
-
+```
 
 
 ### Just Wait!
