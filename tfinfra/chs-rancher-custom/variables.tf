@@ -5,7 +5,12 @@ variable "region" {
 
 variable "master_instance_type" {
   description = "The instance type."
-  default = "t3a.small"
+  default = "t3a.large"
+}
+
+variable "ship_instance_type" {
+  description = "ships - The instance type."
+  default = "t3a.large"
 }
 
 
@@ -15,9 +20,13 @@ variable "subnet_id" {
   default = "subnet-0dd447dd1e3e8f355"
 }
 
+variable "ship_userdata" {
+  description = "user data os startup scripts"
+  default = ["ship0.sh", "ship1.sh"]
+}
 
 variable "ship_name" {
-  description = "The test number"
+  description = "ship names - DUH!"
   default = ["butzer-ship-0", "butzer-ship-1"]
 }
 variable "test_name" {

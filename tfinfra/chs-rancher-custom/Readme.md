@@ -11,6 +11,9 @@ i Hope:
 
 ## WIP
 
+
+## oleWIP
+
 1. test start and stop of ships
 2. do it again this time with auto start of docker
 2. add master with docker 
@@ -18,5 +21,12 @@ i Hope:
 
 
 ## Next Steps
+
+### Stopping Ships
+
+1. Makefile defunct edits
+2. change startup userdata to be ship dependent ship0 and ship1
+3. start master also
+4. auto install docker
 
 

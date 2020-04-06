@@ -9,12 +9,32 @@ provider "aws" {
   NAT Instance
 */
 
+resource "aws_instance" "master" {
+
+  ami           = "${var.ami}"
+
+  instance_type = "${var.ship_instance_type}"
+  key_name                    = "${var.key_name}"
+  subnet_id                   = "${var.subnet_id}"
+  tags = {
+    Name = "butzer-master-rancher"
+    Owner = "butzer@contractor.usgs.gov"
+    Project = "LPIP"
+  }
+  iam_instance_profile                    ="${var.iam_role}"
+
+  security_groups = ["${var.security_group_ssh}", "${var.security_group_ping}", "${var.security_group_web}"]
+  root_block_device {volume_size = 40}
+
+  user_data                   = "${file("files/master-rancher.sh")}"
+
+}
 
 resource "aws_instance" "ship" {
 
   ami           = "${var.ami}"
 
-  instance_type = "${var.master_instance_type}"
+  instance_type = "${var.ship_instance_type}"
   key_name                    = "${var.key_name}"
   subnet_id                   = "${var.subnet_id}"
   tags = {
@@ -23,10 +43,11 @@ resource "aws_instance" "ship" {
     Project = "LPIP"
   }
   iam_instance_profile                    ="${var.iam_role}"
-  # security_groups = ["${var.security_group_ssh}", "${var.security_group_ping}", "${aws_security_group.xrdp.id}"]
+
   security_groups = ["${var.security_group_ssh}", "${var.security_group_ping}", "${var.security_group_web}"]
   root_block_device {volume_size = 40}
-  user_data                   = "${file("files/os_boot.sh")}"
+
+  user_data                   = "${file("files/${var.ship_userdata[count.index]}")}"
 
   count = 2
 }
