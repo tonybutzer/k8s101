@@ -4,7 +4,7 @@ echo "Hello Tony" > /tmp/hellotony.txt
 
 sudo apt-get install -y make
 
-EC=masterrancher
+EC=masters3
 sudo hostname $EC
 echo "127.0.0.1 $EC " >> /etc/hosts
 
