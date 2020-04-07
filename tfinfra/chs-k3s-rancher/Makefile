@@ -12,7 +12,7 @@ bash:
 	docker run -i -t -v `pwd`/:/tfinfra tbutzer/terraform bash
 
 ipshow:
-	terraform show |egrep  'Name|private_ip'
+	terraform show |egrep  'Name|private_ip|nstance'
 
 
 git:
