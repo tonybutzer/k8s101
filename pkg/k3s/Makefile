@@ -35,5 +35,9 @@ deploy-nginx:
 
 test-nginx:
 	curl http://localhost:8081
+
+top:
+	kubectl top node
+	kubectl top pod --all-namespaces
 git:
 	(cd /opt/k8s101; make)
