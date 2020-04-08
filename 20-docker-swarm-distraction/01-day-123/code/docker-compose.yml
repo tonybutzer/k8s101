@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: tbutzer/stackdemo
+    build: .
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
+  tony:
+    image: tbutzer/bash-tester

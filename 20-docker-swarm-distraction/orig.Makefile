@@ -13,18 +13,7 @@ git:
 
 
 init-swarm:
-	docker swarm init --listen-addr 0.0.0.0:8300  --data-path-port 8400 > 0000Instructions
-
-clobber-swarm:
-	docker swarm leave --force
-	cmd='docker swarm leave --force' ; \
-	sshx='ssh -i /home/ubuntu//CHS-LSDSDPAS-butzer.pem ' ; \
-	for ship in `grep ship /etc/hosts | awk '{print $$2}'`; do \
-                echo $$sshx $$ship  $$cmd; \
-                $$sshx $$ship  $$cmd; \
-        done
-
-
+	docker swarm init --listen-addr 0.0.0.0:8080 > 0000Instructions
 
 
 join-swarm-workers:
