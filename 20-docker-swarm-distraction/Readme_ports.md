@@ -28,3 +28,7 @@ Custom TCP	TCP	8500	sg-0442c39de4f0a6e44 (dev-tiling-consul202004032125109001000
 Custom TCP	TCP	8600	0.0.0.0/0	-
 Custom TCP	TCP	8600	sg-0442c39de4f0a6e44 (dev-tiling-consul20200403212510900100000003)	-
 
+
+# Gossip
+
+> Do you have TCP port 7946 open on your hosts? Gossip needs that port open for networking to work correctly.
