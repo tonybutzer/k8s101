@@ -1,5 +1,5 @@
 myjup:
-	python3 -m notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml' --port=9080 
+	python3 -m notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml' --port=8080
 
 
 install:
