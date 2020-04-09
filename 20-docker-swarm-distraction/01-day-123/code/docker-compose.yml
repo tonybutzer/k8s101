@@ -10,3 +10,7 @@ services:
     image: redis:alpine
   tony:
     image: tbutzer/bash-tester
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
