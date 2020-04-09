@@ -14,3 +14,4 @@ sudo mkdir -p /opt
 sudo chown -R ubuntu /opt
 
 (cd /opt/k8s101/pkg/docker; make install)
+(cd /opt/k8s101/pkg/jupyter; make install)
