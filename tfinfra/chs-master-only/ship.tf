@@ -10,7 +10,7 @@ resource "aws_instance" "master" {
   key_name                    = "${var.key_name}"
   subnet_id                   = "${var.subnet_id}"
   tags = {
-    Name = "butzer-master-k3s-prime"
+    Name = "butzer-master-honker"
     Owner = "butzer@contractor.usgs.gov"
     Project = "LPIP"
   }

@@ -6,9 +6,9 @@ apply:
 
 destroy:
 	terraform destroy
-	./renameDefunct.sh butzer-ship-0
-	./renameDefunct.sh butzer-ship-1
-	./renameDefunct.sh butzer-master-rancher
+	./renameDefunct.sh butzer-sship-0
+	./renameDefunct.sh butzer-sship-1
+	./renameDefunct.sh butzer-master-swarm
 
 bash:
 	docker run -i -t -v `pwd`/:/tfinfra tbutzer/terraform bash
