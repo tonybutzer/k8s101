@@ -1,7 +1,7 @@
 echo:
 	echo JUST ECHO - nothing to see here
 myjup:
-	python3 -m notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml' --port=8600
+	python3 -m notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml' --port=8080
 
 
 install:
