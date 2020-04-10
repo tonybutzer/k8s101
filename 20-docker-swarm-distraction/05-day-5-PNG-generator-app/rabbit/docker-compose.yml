@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  rabbitmq:
+        image: rabbitmq:3-management-alpine
+        container_name: rabbitmq
+        ports:
+            - 5672:5672
+            - 15672:15672
+  web:
+    image: tbutzer/stackdemo
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
+  tony:
+    image: tbutzer/bash-tester
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+
+
