@@ -13,6 +13,8 @@ services:
       - "8000:8000"
   redis:
     image: redis:alpine
+  qbarf:
+    image: tbutzer/q_barfer
   tony:
     image: tbutzer/bash-tester
     deploy:
