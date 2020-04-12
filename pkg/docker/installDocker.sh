@@ -8,6 +8,7 @@
  sudo apt-get -y update
  sudo apt-get -y install docker-ce
  sudo apt-get -y install docker-compose
+ sudo apt-get -y install gnupg2 pass
 
 #(3) Verify the installation
 
