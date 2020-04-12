@@ -6,7 +6,7 @@ apply:
 
 destroy:
 	terraform destroy
-	./renameDefunct.sh butzer-master-k3s-prime
+	./renameDefunct.sh butzer-master-honker
 
 bash:
 	docker run -i -t -v `pwd`/:/tfinfra tbutzer/terraform bash

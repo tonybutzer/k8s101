@@ -3,14 +3,10 @@ variable "region" {
   default = "us-west-2"
 }
 
-variable "master_instance_type" {
-  description = "The instance type."
-  default = "t3a.large"
-}
 
 variable "ship_instance_type" {
   description = "ships - The instance type."
-  default = "t3a.large"
+  default = "c5.9xlarge"
 }
 
 
