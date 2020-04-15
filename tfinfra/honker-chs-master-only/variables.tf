@@ -6,7 +6,8 @@ variable "region" {
 
 variable "ship_instance_type" {
   description = "ships - The instance type."
-  default = "c5.9xlarge"
+  #default = "c5.9xlarge"
+  default = "t3a.2xlarge"
 }
 
 
