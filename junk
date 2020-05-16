@@ -1,0 +1,5 @@
+./tfinfra/butzer-swarm-cluster-chs/variables.tf
+./tfinfra/honker-chs-master-only/variables.tf
+./tfinfra/chs-k8s-sb/variables.tf
+./tfinfra/chs-rancher-custom/variables.tf
+./tfinfra/chs-k3s-rancher/variables.tf
